@@ -1,0 +1,23 @@
+export(basis_random,
+       kde_bel.builder, knn_bel.builder, jit_bel.builder,
+       bpamat, bpa,
+       combine.bs, combine.ds,
+       combine.bpa.bs, combine.bpa.ds,
+       combine.bpa.list.bs, combine.bpa.list.ds,
+       combine.bpamat.bs, combine.bpamat.ds,
+       combine.bpamat.list.bs, combine.bpamat.list.ds,
+       eu.dist, ab.dist, mh.dist,
+       eu.dist.matY, ab.dist.matY, mh.dist.matY,
+       ensemble,
+       get.NN,
+       least.k, which.least.k, least.p, which.least.p)
+
+S3method(print, bpa)
+S3method(print, bpamat)
+
+importFrom(sm, sm.density)
+importFrom(MASS, mvrnorm)
+importFrom(gtools, rdirichlet)
+importFrom(parallel, mclapply)
+importFrom(parallel, detectCores)
+importFrom("stats", "cov", "rnorm", "runif")

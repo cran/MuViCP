@@ -1,0 +1,98 @@
+Version 1.3.2
+  Wrote a longer description line for the package, to more fully describe what the package does.
+  Hat Tip: Uwe Liggs
+  
+Version 1.3.1
+  parallel processing now removed from ensemble examples to pass CRAN check
+  Namespace Imports from stats package implemented  
+  Hat Tip for all of these: Kurt Hornik
+  Also cleaned up main package documentation file
+  
+Version 1.3
+  Belief Builder functions' options are now implemented as a parameter list
+  Documentation updated to reflect this change
+  A proper Ensemble function has finally been written
+  Parallel processing fixed in the ensemble function
+  Ensemble function now has a function to return all the classification matrices in order
+  Package now depends on 'parallel' package
+
+Version 1.2
+  Added Full namespace export directive
+  Removed dependency on cepp
+    -Added files bases.R (Contains 3 functions from the tourr package by Hadley Wickham)
+    -Added original documentation file for basis_random
+  Reorganized files 
+    -combination functions moved to file combine.R
+    -documentation moved to combine.Rd
+  Added a verbose option to bpa and bpamat print objects
+  Rewrote combine.ds function
+    
+Version 1.1
+  Is a Major Upgrade from before, primarily in terms of architecture
+  get.NN 
+    Can now return the largest distance it finds (This feature used in the jitter belief function)
+    Conversion from p to k now automatically handled inside get.NN function
+    Functions least.p and which.least.p still retained in file knn_header.R
+    Documentation Updated to include examples of new feature
+  bpa
+    Now declared as a class, with print method & Documentation Updated
+  bpa.mat
+    Now declared as a class, with print method & Documentation Updated. Example Added.
+  Removed file DS_Classify.R, replaced with Belief.R
+  New Belief Functions documented
+  Documentation file for proj_classify removed
+  File Ensemble.R removed (temporarily)
+  Documentation file ensemble.Rd removed (temporarily)
+  
+Version 1.0
+  Combination function was coded wrong, retain, but code new DS function
+    Done & Verified for bpa objects
+    Done & Verified for bpamat objects
+  Rewrite assigned ratios function so that it always returns ratios to ignorance
+  
+Version 0.9
+  Fix bug in get.NN function - distances were being returned wrong  
+  Add more belief functions (New File: Belief.R)
+  
+Version 0.8
+  Revert proj_classify to that in package version 0.5
+  Remove 'info' argument from proj_classify
+  Update proj_classify documentation
+  Fix bug in ensemble function where nmats was not being updated
+  Update ensemble function to work with the new proj_classify function
+  Document the ensemble function
+  
+Version 0.7
+  Including an ensemble function
+  Fixed a bug in the bpamat combine function
+  
+Version 0.6
+  proj_classify now returns bpa.mat type objects
+  Documentation of proj_classify and bpa.mat updated to reflect this change
+  
+Version 0.5
+  proj_classify now accounts for ignorance in classification
+  proj_classify now has a field for info
+  Fixed a bug in proj_classify where the row names were being assigned wrong
+  
+Version 0.4
+  A new R file is added: DS_Support.R 
+    Allows storing multiple bpa objects as matrices
+    Meant to better support DS operations in classification
+  bpa objects now have two additional fields - name and info
+  bpa objects now return full classification info
+  Relevant Documentation is added / updated
+  
+Version 0.3
+  Package compiles without error or warnings
+  proj_classify now has a working example
+  Breast Cancer data is now documented
+  
+Version 0.2
+  UCI Breast Cancer dataset is now part of the package
+  bpa objects now return classification information
+  bpa lists can be combined at once
+  proj_classify is now properly documented
+  
+Version 0.1
+  First Package Version
